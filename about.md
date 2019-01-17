@@ -21,11 +21,16 @@ I upload my sudden ideas(even though it is useless). I want to share my ideas wi
 - Python
 - Verilog
 
-### Interests
+### Research
 
 - NPU
 - FPGA
 - DNN
+
+### Interests
+
+- Programming
+- New Technology for IT
 
 ### Education
 
