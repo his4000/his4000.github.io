@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Paper Test
+title: Research Test
 date: 2019-01-17
-categories: [paper]
+categories: [research]
 ---
 
-This is a test page for paper categories.
+This is a test page for research categories.
