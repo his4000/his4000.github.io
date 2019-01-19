@@ -143,8 +143,15 @@ img {
   padding: 5px;
 }
 
-.category .book {
+.category .technology {
   background: $green;
+  border-radius: inherit;
+  display: inherit;
+  padding: 5px;  
+}
+
+.category .book {
+  background: $blue;
   border-radius: inherit;
   display: inherit;
   padding: 5px;
