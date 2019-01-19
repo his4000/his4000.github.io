@@ -130,14 +130,23 @@ img {
 
 .category .project {
   background: $red;
+  border-radius: inherit;
+  display: inherit;
+  padding: inherit;
 }
 
 .category .research {
   background: $yellow;
+  border-radius: inherit;
+  display: inherit;
+  padding: inherit;
 }
 
 .category .book {
   background: $green;
+  border-radius: inherit;
+  display: inherit;
+  padding: inherit;
 }
 
 // Specify the color of the selection
