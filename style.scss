@@ -23,12 +23,6 @@ body {
   color: $darkGray;
 }
 
-body::after {
-  background-image: url("/images/wallpaper1.jpg");
-  background-size: 100%;
-  opacity: 0.5;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1000px;
