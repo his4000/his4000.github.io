@@ -121,10 +121,11 @@ img {
 }
 
 .category {
-  background: $gray;
+  background: $green;
   border-radius: 5px;
-  font-style: italic;
-  color: $gray;
+  font-weight: bold;
+  color: $white;
+  display: block;
 }
 
 // Specify the color of the selection
