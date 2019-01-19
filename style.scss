@@ -125,28 +125,27 @@ img {
   font-weight: bold;
   color: $white;
   display: inline;
-  padding: 5px;
 }
 
 .category .project {
   background: $red;
   border-radius: inherit;
   display: inherit;
-  padding: inherit;
+  padding: 5px;
 }
 
 .category .research {
   background: $yellow;
   border-radius: inherit;
   display: inherit;
-  padding: inherit;
+  padding: 5px;
 }
 
 .category .book {
   background: $green;
   border-radius: inherit;
   display: inherit;
-  padding: inherit;
+  padding: 5px;
 }
 
 // Specify the color of the selection
