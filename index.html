@@ -10,9 +10,7 @@ max_posts: 10
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       {% for category in post.categories %}
-      <div class="category">
-        {{ category }}
-      </div>
+        {% include category-block.html %}
       {% endfor %}
 
       <div class="entry">
