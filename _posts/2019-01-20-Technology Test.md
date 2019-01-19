@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Research Test
+title: Technology Test
 date: 2019-01-17
 categories: [technology]
 ---
