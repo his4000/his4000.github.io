@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 0 0 1em;
   padding: 0;
 
   @include mobile {
@@ -269,7 +269,8 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   border-bottom: 1px solid $lightGray;
 }
 
