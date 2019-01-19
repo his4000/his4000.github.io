@@ -6,15 +6,14 @@ max_posts: 10
 <div class="posts">
   {% for post in site.posts | limit: {{ max_posts }} %}
     <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
       <div class="category">
       {% for category in post.categories %}
         <div class="{{ category }}">{{ category }}</div>
       {% endfor %}
       </div>
 
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      
       <div class="entry">
         {{ post.excerpt }}
         <div class="date">
