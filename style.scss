@@ -121,12 +121,23 @@ img {
 }
 
 .category {
-  background: $green;
   border-radius: 5px;
   font-weight: bold;
   color: $white;
   display: inline;
   padding: 5px;
+}
+
+.category .project {
+  background: $red;
+}
+
+.category .research {
+  background: $yellow;
+}
+
+.category .book {
+  background: $green;
 }
 
 // Specify the color of the selection
