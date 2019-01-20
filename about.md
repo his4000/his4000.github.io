@@ -40,7 +40,7 @@ Mar.2018 ~ Present : M.S. student in the Computer Systems and Platforms Lab.
 ### Career
 
 Sep.2016 ~ Dec.2017 : Tutor for SCSC(Samsung Convergence Software Course) at Konkuk University <br>
-July.2017 ~ Aug.2018 : Development intern in LINE+ corp. <br>
+July.2017 ~ Aug.2017 : Development intern in LINE+ corp. <br>
 Mar.2018 ~ Present : SNU research student for Samsung NPRC(Neural Processing Research Center)
 
 ### Contact me
