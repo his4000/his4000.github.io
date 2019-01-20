@@ -19,16 +19,16 @@ avatar: /images/avatar.jpeg
 footer-links:
   dribbble:
   email: shaminy217@gmail.com
-  facebook:
+  facebook: kms0217
   flickr:
   github: his4000
-  instagram:
+  instagram: kim_minsu9173
   linkedin: tommyminsukim
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
+  stackoverflow: users/9399245/minsu-kim # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: channel/UCKqkooj7e3RpgJwwN1_-wyA # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
