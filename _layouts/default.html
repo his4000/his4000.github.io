@@ -46,7 +46,7 @@
             <strong class="tag-title">Tags</strong>
               <ul>
                 {% for tag in site.tags %}
-                  <li>{{ tag | first }} ( {{ tag | last | size }} )</li>
+                  <li><a href="{{ site.baseurl }}/tags/{{ tag | first }}">{{ tag | first }} ( {{ tag | last | size }} )</a></li>
                 {% endfor %}
               </ul>
           </section>

@@ -1,10 +1,11 @@
 ---
 layout: default
-max_posts: 10
 ---
 
+<h1>{{ page.title }}</h1>
+
 <div class="posts">
-  {% for post in site.posts | limit: {{ max_posts }} %}
+  {% for post in site.posts %}
     <article class="post">
       <div class="category">
       {% for category in post.categories %}
@@ -19,7 +20,7 @@ max_posts: 10
       
       <div class="tag-box">
         {% for tag in post.tags %}
-          <div class="tag"><a href="{{ site.baseurl }}/tags/{{ tag }}">#{{ tag }}</a></div>
+          <div class="tag">#{{ tag }}</div>
         {% endfor %}
       </div>
        <div class="entry">
@@ -29,4 +30,3 @@ max_posts: 10
     </article>
   {% endfor %}
 </div>
-
