@@ -168,12 +168,11 @@ img {
 }
 
 .tag {
+  font-size: 5px;
   font-style: italic;
   padding: 5px;
   background: $white;
-  border: 2px solid $darkGreen;
-  border-radius: 15px;
-  display: inline;
+  text-decoration: underline;
   color: $darkGreen;
 }
 
