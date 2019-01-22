@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: test
+title: Test
 permalink: /tags/test
 ---
