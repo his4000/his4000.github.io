@@ -41,18 +41,19 @@
     <div id="main" role="main" class="container">
       <section class="main-body">
         {{ content }}
-        <aside class="tag-list">
-          <section>
-            <strong class="tag-title">Tags</strong>
-              <ul>
-                {% for tag in site.tags %}
-                  <li><a href="{{ site.baseurl }}/tags/{{ tag | first }}">{{ tag | first }} ( {{ tag | last | size }} )</a></li>
-                {% endfor %}
-              </ul>
-          </section>
-        </aside>
       </section>
     </div>
+
+    <aside class="tag-list">
+      <section>
+        <strong class="tag-title">Tags</strong>
+          <ul>
+            {% for tag in site.tags %}
+              <li><a href="{{ site.baseurl }}/tags/{{ tag | first }}">{{ tag | first }} ( {{ tag | last | size }} )</a></li>
+            {% endfor %}
+          </ul>
+      </section>
+    </aside>
 
     <div class="wrapper-footer">
       <div class="container">
