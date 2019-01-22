@@ -18,9 +18,11 @@ max_posts: 10
           Written on {{ post.date | date: "%B %e, %Y" }}
       </div>
       
-      {% for tag in post.tags %}
-        <div class="tag">#{{ tag }}</div>
-      {% endfor %}
+      <div style="margin: 1em 0 0 0;">
+        {% for tag in post.tags %}
+          <div class="tag">#{{ tag }}</div>
+        {% endfor %}
+      </div>
 
       <div class="entry">
         {{ post.excerpt }}

@@ -169,11 +169,10 @@ img {
 
 .tag {
   font-style: italic;
-  padding: 15px;
-  margin: 1em;
+  padding: 5px;
   background: $white;
-  border: 1px solid $darkGreen;
-  border-radius: 5px;
+  border: 2px solid $darkGreen;
+  border-radius: 15px;
   display: inline;
   color: $darkGreen;
 }
