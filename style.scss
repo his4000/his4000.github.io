@@ -167,11 +167,16 @@ img {
   padding: 5px;
 }
 
-.tag {
-  font-size: 5px;
+.tag-box {
+  margin: 0.5em 0 0 0;
+}
+
+.tag-box .tag {
+  font-size: 17px;
   font-style: italic;
   padding: 5px;
   background: $white;
+  display: inline;
   text-decoration: underline;
   color: $darkGreen;
 }
