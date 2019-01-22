@@ -38,20 +38,22 @@
       </div>
     </div>
 
-    <div id="main" role="main" class="main-body">
-      {{ content }}
-    </div>
+    <div id="main-body">
+      <div id="main" role="main" class="container">
+        {{ content }}
+      </div>
 
-    <aside class="tag-list">
-      <section>
-        <strong class="tag-title">Tags</strong>
-          <ul>
-            {% for tag in site.tags %}
-              <li><a href="{{ site.baseurl }}/tags/{{ tag | first }}">{{ tag | first }} ( {{ tag | last | size }} )</a></li>
-            {% endfor %}
-          </ul>
-      </section>
-    </aside>
+      <aside class="tag-list">
+        <section>
+          <strong class="tag-title">Tags</strong>
+            <ul>
+              {% for tag in site.tags %}
+                <li><a href="{{ site.baseurl }}/tags/{{ tag | first }}">{{ tag | first }} ( {{ tag | last | size }} )</a></li>
+              {% endfor %}
+            </ul>
+        </section>
+      </aside>
+    </div>
 
     <div class="wrapper-footer">
       <div class="container">
