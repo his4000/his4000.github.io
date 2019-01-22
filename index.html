@@ -32,3 +32,13 @@ max_posts: 10
     </article>
   {% endfor %}
 </div>
+<aside>
+  <section>
+    <strong>Tags</strong>
+    <ul>
+      {% for tag in site.tags %}
+        <li>{{ tag }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+</aside>
