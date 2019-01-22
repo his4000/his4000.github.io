@@ -22,6 +22,12 @@ body {
   color: $darkGray;
 }
 
+.main-body::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1000px;
@@ -168,8 +174,10 @@ img {
 }
 
 .tag-list {
+  margin: 2em 0;
   float: right;
   width: 20%;
+
 }
 
 .tag-list .tag-title {
