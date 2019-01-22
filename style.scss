@@ -167,6 +167,16 @@ img {
   padding: 5px;
 }
 
+.tag-list {
+  float: right;
+  width: 20%;
+}
+
+.tag-list .tag-title {
+  font-weight: bold;
+  color: #5e9689;
+}
+
 .tag-box {
   margin: 0.5em 0 0 0;
 }
@@ -304,6 +314,11 @@ nav {
 //
 // .main
 //
+
+.posts {
+  float: left;
+  width: 80%;
+}
 
 .posts > .post {
   padding-top: 2em;

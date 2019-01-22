@@ -32,9 +32,9 @@ max_posts: 10
       </article>
     {% endfor %}
   </div>
-  <aside>
+  <aside class="tag-list">
     <section>
-      <strong>Tags</strong>
+      <strong class="tag-title">Tags</strong>
       <ul>
         {% for tag in site.tags %}
           <li>{{ tag | first }} ( {{ tag | last | size }} )</li>
