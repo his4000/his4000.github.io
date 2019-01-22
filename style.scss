@@ -22,9 +22,15 @@ body {
   color: $darkGray;
 }
 
-#main {
+.main-body {
   float: left;
   width: 80%;
+}
+
+.main-body::after {  
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .container {
@@ -32,12 +38,6 @@ body {
   max-width: 1000px;
   padding: 0 10px;
   width: 100%;
-}
-
-.container::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .entry {
