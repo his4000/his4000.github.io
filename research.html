@@ -14,7 +14,7 @@ description: This is a page to post some articles and paper summaries which I've
 
             <div class="tag-box">
                 {% for tag in post.tags %}
-                    <div class="tag">#{{ tag }}</div>
+                    <a href="{{ site.baseurl }}/tags/{{ tag }}"><div class="tag">#{{ tag }}</div></a>
                 {% endfor %}
             </div>
 

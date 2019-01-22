@@ -15,7 +15,7 @@ description: This is a page to introduce the projects which I've proceeded with.
                 
             <div class="tag-box">
                 {% for tag in post.tags %}
-                    <div class="tag">#{{ tag }}</div>
+                    <a href="{{ site.baseurl }}/tags/{{ tag }}"><div class="tag">#{{ tag }}</div></a>
                 {% endfor %}
             </div>
                 
