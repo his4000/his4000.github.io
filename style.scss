@@ -167,6 +167,14 @@ img {
   padding: 5px;
 }
 
+.tag {
+  background: $white;
+  border: 3px solid $darkGreen;
+  border-radius: 5px;
+  display: inline;
+  color: $darkGreen;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
