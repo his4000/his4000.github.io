@@ -22,11 +22,6 @@ body {
   color: $darkGray;
 }
 
-.main-body {
-  float: left;
-  width: 80%;
-}
-
 .main-body::after {  
   content: "";
   display: table;
@@ -38,6 +33,13 @@ body {
   max-width: 1000px;
   padding: 0 10px;
   width: 100%;
+}
+
+.body-container {
+  float: left;
+  max-width: 1000px;
+  padding: 0 10px;
+  width: 80%;
 }
 
 .entry {
