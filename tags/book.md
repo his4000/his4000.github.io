@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: Book
+title: book
 permalink: /tags/book
 ---
