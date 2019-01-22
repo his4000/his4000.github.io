@@ -39,7 +39,19 @@
     </div>
 
     <div id="main" role="main" class="container">
-      {{ content }}
+      <section class="main-body">
+        {{ content }}
+        <aside class="tag-list">
+          <section>
+            <strong class="tag-title">Tags</strong>
+              <ul>
+                {% for tag in site.tags %}
+                  <li>{{ tag | first }} ( {{ tag | last | size }} )</li>
+                {% endfor %}
+              </ul>
+          </section>
+        </aside>
+      </section>
     </div>
 
     <div class="wrapper-footer">
