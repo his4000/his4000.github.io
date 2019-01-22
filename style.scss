@@ -22,10 +22,6 @@ body {
   color: $darkGray;
 }
 
-.main-body {
-  width: 100%;
-}
-
 .main-body::after {  
   content: "";
   display: table;
