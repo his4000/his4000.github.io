@@ -197,6 +197,7 @@ img {
 .clearfix:after {
     content: " ";
     display: table;
+    overflow: auto;
 }
 
 .clearfix:after {
