@@ -6,6 +6,7 @@ author: Song Han et al.
 publish: ISCA 2016
 link: https://dl.acm.org/citation.cfm?id=3001163
 categories: [research]
+tags: [DNN, accelerator, ASIC, ISCA]
 ---
 
 ## Abstract
@@ -43,6 +44,6 @@ In DNN parameters, there are so many zero values after pruning (pruning can redu
 
 In the *Sparse Matrix*, there are 3 kinds of values: Virtual Weight, Relative Row Index, Column Pointer. Virtual weight is real-weight value which is quantized to 4-bits. By **weight sharing** in *Deep Compression*, the parameters can be quantized to 5 or 4 bits without accuracy loss.
 
-Relative row index is the relative location of virtual weight value in vector that each PE has. For example, the green values are in *PE0*. the first relative row index of *PE0* is 0 because there is no zero value before *w0,0*. And the next relative row index is 1 because there is a zero value between *w0,0* and *w8,0*. Let's see 4th relative row index. If the column is changed, relative row index is initialized. So, the 4th relative row index is 1 because there is only one zero before *w4,1* in second column.
+Relative row index is the relative location of virtual weight value in vector that each PE has. For example, the green values are in *PE0*. the first relative row index of *PE0* is 0 because there is no zero value before *w0,0*. And the next relative row index is 1 because there is a zero value between *w0,0* and *w8,0*. Let's see 4th relative row index. If the column is changed, relative row index is initialized. So, the 4th relative row index is 1 because there is only one zero before *w4,1* in second column. Relative row index value is also 4 bits. So, if there are more than 15 zeros, relative row index vector has 0 padding. For example, there is a vector of values [0, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]. In this case, virtual weight vector is [1, 2, 0, 3] which includes 0 padding, and relative row index vector is [2, 0, 15, 2].
 
 Column Pointer means relative location of the cluster group by column. For example, the second value of column index is 3 because there are 3 values which *PE0* has in the first column. And the third value is 4 because there is only 1 value in the second column.
