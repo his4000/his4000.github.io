@@ -9,3 +9,4 @@ categories: [research]
 tags: [DNN, accelerator, ASIC, ISCA]
 ---
 
+This paper is about energy efficient DNN architecture based on *Sparse Matrix-vector Multiplication*. 
