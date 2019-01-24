@@ -100,15 +100,16 @@
     {% include analytics.html %}
 
     <script>
-        /*let tag_name = document.getElementById("tag-name");
+        let tag_name = document.getElementById("tag-name");
 
         function getParameterByName(name) {
             name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
             var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
             results = regex.exec(location.search);
             return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-        }*/
-
+        }
+        tag_name.value = getParameterByName('tag');
+        /*
         function getParameterByName(name) {
             let returnValue; 
             let url = location.href; 
@@ -124,6 +125,7 @@
 
         "{{ page.title }}" = getParameterByName('tag');
         console.log("{{ page.title }}");
+        */
     </script>
   </body>
 </html>
