@@ -211,6 +211,11 @@ img {
   color: $darkGreen;
 }
 
+.copyright_caution {
+  font-style: italic;
+  align-content: center;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
