@@ -4,8 +4,6 @@ layout: default
 
 <h1 id="tag-name" style="font-style: italic;">Tag is not Existed.</h1>
 
-{% assign title = getParameterByName('tag') %}
-
 <div class="posts">
   {% for post in site.posts %}
     {% if post.tags contains title %}
@@ -45,6 +43,7 @@ layout: default
             return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
         }
         tag_name.innerHTML = "#" + getParameterByName('tag');
+        {% assign title = getParameterByName('tag') %}
         console.log(getParameterByName('tag'));
         console.log(tag_name);
         console.log("This is" + "{{ title }}");
