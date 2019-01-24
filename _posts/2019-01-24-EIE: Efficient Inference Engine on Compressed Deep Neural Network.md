@@ -28,9 +28,9 @@ This paper transforms the weight matrix to *Sparse Matrix* using CSC (Compressed
 
 Let's see the example. The figure below indicates a example of matrix-vector multiplication in DNN.
 
-![Sparse Matrix](/images/EIE/1.png)
-
 > Figure 2 and 3 in EIE: Efficient Inference Engine on Compressed Deep Neural Network. Han et al. ISCA 2016.
+
+![Sparse Matrix](/images/EIE/1.png)
 
 The weight matrix, the most large matrix in the center, includes many zeros. 
 
@@ -42,9 +42,9 @@ The last, *Column Pointer* indicates the pointer of *Virtual Weight* for each co
 
 ## Architecture
 
-![Architecture](/images/EIE/2.png)
-
 > Figure 4 in EIE: Efficient Inference Engine on Compressed Deep Neural Network. Han et al. ISCA 2016.
+
+![Architecture](/images/EIE/2.png)
 
 The PE (Processing Element) architecture implements to exploit *Deep Compression*. First, there is Leading Non-zero Detect (LND) to detect first non-zero value in the activation. Statistically, there are 70% of zero values in activation. In order to exploit sparsity of activations, we need to detect non-zero value in the activation vector. LND node broadcasts the first non-zero activation to every PE activation queue.
 
@@ -56,9 +56,9 @@ After multiply and add calculation between activation and weight value, the outp
 
 ## Evaluation
 
-![Evaluation](/images/EIE/3.png)
-
 > Figure 6 and 7 in EIE: Efficient Inference Engine on Compressed Deep Neural Network. Han et al. ISCA 2016.
+
+![Evaluation](/images/EIE/3.png)
 
 The main reasons of energy efficincy and performance improvement are below:
 
