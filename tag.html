@@ -109,6 +109,7 @@
             return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
         }
         tag_name.value = getParameterByName('tag');
+        console.log(getParameterByName('tag'));
         console.log(tag_name);
         /*
         function getParameterByName(name) {
