@@ -15,32 +15,6 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    <script>
-        /*let tag_name = document.getElementById("tag-name");
-
-        function getParameterByName(name) {
-            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-            results = regex.exec(location.search);
-            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-        }*/
-
-        function getParameterByName(name) {
-            let returnValue; 
-            let url = location.href; 
-            let parameters = (url.slice(url.indexOf('?') + 1, url.length)).split('&'); 
-            for (let i = 0; i < parameters.length; i++) { 
-                let varName = parameters[i].split('=')[0]; 
-                if (varName.toUpperCase() == param.toUpperCase()) { 
-                    returnValue = parameters[i].split('=')[1]; 
-                    return decodeURIComponent(returnValue); 
-                } 
-            }
-        }
-
-        "{{ page.title }}" = getParameterByName('tag');
-        console.log("{{ page.title }}");
-    </script>
   </head>
 
   <body>
@@ -124,5 +98,32 @@
     </div>
 
     {% include analytics.html %}
+
+    <script>
+        /*let tag_name = document.getElementById("tag-name");
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }*/
+
+        function getParameterByName(name) {
+            let returnValue; 
+            let url = location.href; 
+            let parameters = (url.slice(url.indexOf('?') + 1, url.length)).split('&'); 
+            for (let i = 0; i < parameters.length; i++) { 
+                let varName = parameters[i].split('=')[0]; 
+                if (varName.toUpperCase() == param.toUpperCase()) { 
+                    returnValue = parameters[i].split('=')[1]; 
+                    return decodeURIComponent(returnValue); 
+                } 
+            }
+        }
+
+        "{{ page.title }}" = getParameterByName('tag');
+        console.log("{{ page.title }}");
+    </script>
   </body>
 </html>
