@@ -7,7 +7,7 @@ publish: ISCA 2016
 link: https://dl.acm.org/citation.cfm?id=3001163
 categories: [research]
 tags: [DNN, accelerator, ASIC, ISCA]
-published: false
+published: true
 ---
 
 This paper is about energy efficient DNN architecture based on *Sparse Matrix-vector Multiplication*.
