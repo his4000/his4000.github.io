@@ -37,14 +37,14 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 0 10px;
   width: 100%;
 }
 
 .body-container {
   float: left;
-  width: 90%;
+  width: 80%;
 }
 
 .entry {
@@ -188,7 +188,7 @@ img {
 .tag-list {
   margin: 2em 0;
   float: right;
-  width: 10%;
+  width: 15%;
 
 }
 
@@ -213,7 +213,7 @@ img {
 
 .copyright_caution {
   font-style: italic;
-  align-content: center;
+  text-align: center;
 }
 
 // Specify the color of the selection
