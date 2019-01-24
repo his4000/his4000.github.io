@@ -43,8 +43,7 @@ layout: default
             return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
         }
         tag_name.innerHTML = "#" + getParameterByName('tag');
-        {% assign title = getParameterByName('tag') %}
         console.log(getParameterByName('tag'));
         console.log(tag_name);
-        console.log("This is a " + "{{ title }}");
+        console.log("This is a " + "{{ site.abseurl }}");
 </script>
