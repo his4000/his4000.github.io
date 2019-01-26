@@ -4,6 +4,7 @@ title: NVIDIA Modern Introduction to CUDA
 date: 2019-01-26
 categories: [technology]
 tags: [NVIDIA, CUDA, Programming, Parallel Programming, Seminar]
+published: true
 ---
 
 2019년 1월 25일. 서울 Trade Center에서 CUDA 입문자를 위한 NVIDIA의 입문 세미나가 있었다. 본 세미나는 기존 C/C++ 프로그래밍에 익숙하면서 CUDA를 이용한 GPU 병렬 프로그래밍에 입문하고자 하는 사람을 대상으로 하는 세미나였다.
