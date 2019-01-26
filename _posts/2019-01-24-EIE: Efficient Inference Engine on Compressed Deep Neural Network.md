@@ -6,7 +6,7 @@ author: Song Han et al.
 publish: ISCA 2016
 link: https://dl.acm.org/citation.cfm?id=3001163
 categories: [research]
-tags: [DNN, accelerator, ASIC, ISCA]
+tags: [DNN, Accelerator, ASIC, ISCA]
 published: true
 ---
 
