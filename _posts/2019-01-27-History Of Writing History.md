@@ -5,7 +5,7 @@ date: 2019-01-27
 author: "유시민"
 publish: "돌베게"
 categories: [book]
-tags: [History, Book]
+tags: [History]
 published: true
 ---
 
