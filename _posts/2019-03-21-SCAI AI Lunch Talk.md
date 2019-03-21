@@ -43,11 +43,9 @@ Clova AI에서 주로 집중하는 AI 분야는 크게 Speech, Vision, Language�
 
 최근 iPhone XS와 XS Max에서 제공되고 있는 Depth 카메라에 대해 이미 알고 있는 사람이 많을 것이다. Depth 카메라는 사물의 거리를 카메라가 인식하여 사진에 반영하는 기술로 포커스가 맞추어진 가까운 사물은 선명하게, 멀리있는 사물은 흐리게 처리해주는 기술이다. Depth 카메라 기술을 통해 실제 사람의 눈으로 장면을 보는 것과 유사한 효과를 사진에 줄 수 있다. Clova AI에서는 Depth 카메라를 사용하지 않고도 Depth 카메라와 유사한 사진을 만드는 서비스를 제공하고 있다. 딥러닝을 통해 사진에서 멀리 있다고 판단되는 물체는 흐리게, 가까이 있다고 판단되는 물체는 선명하게 만들어 주는 기술인데 실제 결과물이 상당한 퀄리티를 가지고 있었다.
 
-![Depth](/images/2019-03-21-SCAI AI Lunch Talk/Depth.jpg)
-
 > iPhone XS의 Depth 카메라를 통해 촬영한 사진. 배경이 흐릿하게 처리됨을 알 수 있다.
 
-
+![Depth](/images/2019-03-21-SCAI AI Lunch Talk/Depth.jpg)
 
 ## AD Platform
 
