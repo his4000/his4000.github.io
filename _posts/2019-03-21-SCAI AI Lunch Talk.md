@@ -47,6 +47,8 @@ Clova AI에서 주로 집중하는 AI 분야는 크게 Speech, Vision, Language�
 
 > iPhone XS의 Depth 카메라를 통해 촬영한 사진. 배경이 흐릿하게 처리됨을 알 수 있다.
 
+
+
 ## AD Platform
 
 AD Platform은 Advertise Platform의 약자로 특정 광고 상품에 고객들이 선호하는 그림 스타일을 융합시켜 새로운 광고 이미지를 만들어내는 기술이다. 이번 세미나에서는 신발 그림을 다른 사진과 융합하는 예시를 들었다.
