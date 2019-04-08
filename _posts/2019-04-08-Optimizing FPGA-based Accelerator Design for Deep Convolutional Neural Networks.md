@@ -30,7 +30,7 @@ These days, *GPU (Graphics Processing Unit)* is most popular processor to run *D
 
 > Figure 1 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![CNN](/images/2019-04-08 Optimizing FPGA-based Accelerator/CNN.png)
+![CNN](/images/2019-04-08-Optimizing FPGA-based Accelerator/CNN.png)
 
 
 
@@ -42,7 +42,7 @@ Communication means the bandwidth between memory and computation units. Even tho
 
 > Figure 3 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![Roofline Model](/image/2019-04-08 Optimizing FPGA-based Accelerator/Roofline Model.png)
+![Roofline Model](/images/2019-04-08-Optimizing FPGA-based Accelerator/Roofline Model.png)
 
 
 
@@ -50,7 +50,7 @@ In the figure above, there are 2 *Algorithms* for example. The *Algorithm 1* can
 
 > Equation (1)  in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![Attainable Performance](/images/2019-04-08 Optimizing FPGA-based Accelerator/Attainable Performance.png)
+![Attainable Performance](/images/2019-04-08-Optimizing FPGA-based Accelerator/Attainable Performance.png)
 
 
 
@@ -62,7 +62,7 @@ The *CNN* accelerator has some components, *PE (Processing Element)*, *On-chip B
 
 > Figure 4 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![Architecture](/images/2019-04-08 Optimizing FPGA-based Accelerator/Architecture.png)
+![Architecture](/images/2019-04-08-Optimizing FPGA-based Accelerator/Architecture.png)
 
 
 
@@ -144,19 +144,19 @@ The hardware implementations depend on the dependency between iterator which is 
 
 > Table 2 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![Dependency Table](/images/2019-04-08 Optimizing FPGA-based Accelerator/Dependency Table.png)
+![Dependency Table](/images/2019-04-08-Optimizing FPGA-based Accelerator/Dependency Table.png)
 
 Let's see the each case. First, the *input feature map* has irrelevant dependency with *occ* and independent dependency with *icc*. Second, the *kernel* has independent dependency both *occ* and *icc*. Third, the *output feature map* has independent dependency with *occ* and irrelevant dependency with *icc*. For each cases, the hardware implementations are different.
 
 > Figure 6 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![Dependency Hardware Implemenetation](/images/2019-04-08 Optimizing FPGA-based Accelerator/Dependency Hardware Implementation.png)
+![Dependency Hardware Implemenetation](/images/2019-04-08-Optimizing FPGA-based Accelerator/Dependency Hardware Implementation.png)
 
 So, the overall hardware implementation for the *computation engine* is like below:
 
 > Figure 7 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![computattion engine](/images/2019-04-08 Optimizing FPGA-based Accelerator/computation engine.png)
+![computation engine](/images/2019-04-08-Optimizing FPGA-based Accelerator/computation engine.png)
 
 
 
@@ -185,7 +185,7 @@ How much size we should tile the *feature map*s for optimal solution? *FPGA* has
 
 > Equation 3 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![Computation Roof](/images/2019-04-08 Optimizing FPGA-based Accelerator/Computation Roof.png)
+![Computation Roof](/images/2019-04-08-Optimizing FPGA-based Accelerator/Computation Roof.png)
 
 By changing the tiling factor Tm and Tn, we can get optimal tiling factor which maximizes computational roof of our implementation.
 
@@ -193,7 +193,7 @@ And each values are limited as follow:
 
 > Equation 2 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![Variable Limiataions](/images/2019-04-08 Optimizing FPGA-based Accelerator/Variable Limitation.png)
+![Variable Limiataions](/images/2019-04-08-Optimizing FPGA-based Accelerator/Variable Limitation.png)
 
 ## Memory Access Optimization
 
@@ -222,13 +222,13 @@ We can calculate the *CTC Ratio*, which is x-axis in *Roofline Model*, by using 
 
 > Equation 4 to 9 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![CTC Ratio](/images/2019-04-08 Optimizing FPGA-based Accelerator/CTC Ratio.png)
+![CTC Ratio](/images/2019-04-08-Optimizing FPGA-based Accelerator/CTC Ratio.png)
 
 If we apply *Memory Access Optimization*:
 
 > Equation 11 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![Apply Memory Access Optimization](/images/2019-04-08 Optimizing FPGA-based Accelerator/CTC Ratio with Memory Access Optimization.png)
+![Apply Memory Access Optimization](/images/2019-04-08-Optimizing FPGA-based Accelerator/CTC Ratio with Memory Access Optimization.png)
 
 ## Design Space Exploration
 
@@ -236,7 +236,7 @@ We can choose optimal design in the *Roofline Model* graph:
 
 > Equation 8 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![Design Space Exploration](/images/2019-04-08 Optimizing FPGA-based Accelerator/DSE.png)
+![Design Space Exploration](/images/2019-04-08-Optimizing FPGA-based Accelerator/DSE.png)
 
 In this case, the design *A* is actually considered *A'* because of the bandwidth limitation. The optimal design is *C* which has the highest *Attainable Performance*.
 
@@ -244,7 +244,7 @@ Each layer has its own dimension factors (i.e. *R*, *C*, *M*, *N*) and tiling fa
 
 > Table 4 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![Tiling Factors](/images/2019-04-08 Optimizing FPGA-based Accelerator/Tiling Factors.png)
+![Tiling Factors](/images/2019-04-08-Optimizing FPGA-based Accelerator/Tiling Factors.png)
 
 
 
@@ -256,7 +256,7 @@ There is some delays through each steps because of data transfer from memory. To
 
 > Figure 12 in *Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks*, Chen Zhang et al. FPGA 2015
 
-![Double Buffering](/images/2019-04-08 Optimizing FPGA-based Accelerator/Double Buffering.png)
+![Double Buffering](/images/2019-04-08-Optimizing FPGA-based Accelerator/Double Buffering.png)
 
 ### External Data Transfer Engine
 
