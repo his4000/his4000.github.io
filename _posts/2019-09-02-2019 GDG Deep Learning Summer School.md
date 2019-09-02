@@ -27,9 +27,11 @@ Machine Learning은 데이터를 기반으로 한 인공지능 기술의 한 갈
 
 Machine Learning 수행 방법 중 **Linear Regression**은 주어진 데이터로부터 선형 모델 가설을 세우고, 이를 점진적으로 개선하는 과정을 거쳐 모델링을 진행하는 것을 말한다. Linear Regression은 총 세 단계의 과정으로 이루어진다.
 
+
   1. Hypothesis : Linear Model 가설 설정
   2. Cost Function : 비용 함수 설정
   3. Optimization : Gradient Descent 알고리즘을 이용한 최적화
+
 
 먼저 해당 데이터셋으로부터 기대되는 가설(Linear Model)을 세운다. 이후에 데이터셋을 이용하여 프로세싱을 수행하고, 그 결과를 수집한다. 가설에 따른 결과와 실제 결과 사이의 비용(Cost)를 Cost Function을 세워 산출한다. 마지막으로 Cost가 최소화 되는 방향으로 모델을 최적화하면서 모델의 정확도를 높인다.
 
@@ -61,9 +63,11 @@ Linear Regression에서처럼 Artificial Neural Network에서도 Gradient Descen
 
 **Deep Learning**은 여러 개의 Perceptron 들이 깊은 네트워크를 이룬 Artificial Neural Network를 말한다. 현대에 들어서 Deep Learning이 발전할 수 있었던 원동력으로 세 가지 요인이 지목되는데,
 
+
   1. Big data
   2. GPU computing
   3. Improved algorithm
+
 
 위의 세 가지 요인이 있다. Deep Learning은 Machine Learning의 한 종류로써 Deep Learning 또한 데이터에 기반한 모델이다. 따라서 방대한 데이터와 이에 대한 분석 기술의 발달이 Deep Learning 발전에 큰 영향을 미쳤다고 할 것이다.
 
@@ -159,17 +163,21 @@ GAN은 기본적으로 *Generator*와 *Discriminator*의 경쟁으로 동작한�
 
 GAN을 수행하는 과정에는 수많은 문제점들이 발생한다.
 
+
   - **Partial Collapse** : Generator가 생성하는 데이터 중 누락된 데이터가 발생함을 의미한다.
   - **Unwanted Sample** : 찌그러진 사진 등 원하지 않는 데이터를 만들어낸다.
   - **Balancing** : Generator가 낮은 비용의 이미지만을 생성한다. 이는 Discriminator의 overfitting을 초래한다.
+
 
 ## Solution
 
 GAN의 여러 문제점을 해결하기 위해 발전된 형태의 GAN이 제시되었다.
 
+
   - **Unrolled GAN** : Generator에게 Discriminator의 진행 방향을 알려줌으로써 *Partial Collapse* 문제를 해결한다.
   - **WGAN** : 비용 함수를 변경하여 *Balancing* 문제를 해결한다.
   - **Progressive GAN** : 작은 이미지 사이즈에서 시작하여 점점 이미지 사이즈를 키우는 방향으로 학습을 진행한다. 높은 해상도의 결과물을 생성할 수 있으며, 빠르게 결과물을 생성할 수 있다.
+
 
 ## Measurement
 
@@ -207,9 +215,11 @@ GAN의 활용 방향에 대해서는 강연자가 전공한 뇌 과학과 관련
 
 GNN은 그래프 자료구조를 Edge와 Vertex 각각의 행렬로 표현함으로써, 딥러닝 연산을 수행할 수 있도록 한다. GNN의 프로세싱 과정은 아래 세 단계로 이루어진다.
 
+
   1. **Aggregate** : 이웃한 vertex로 부터 정보를 수집한다.
   2. **Combine** : Aggregate에서 수집한 정보와 대상 vertex의 정보를 종합한다.
   3. **Readout** : Graph의 시작점에 따라 모델링 결과가 달라질 수 있으므로, 이에 대한 영향력을 줄여준다.
+
 
 ## Graph Convolutional Network
 
@@ -219,9 +229,11 @@ GNN은 그래프 자료구조를 Edge와 Vertex 각각의 행렬로 표현함으
 
 본 세미나에서 설명한 GNN 방식은 몇 가지 한계점을 가지고 있는데,
 
+
   1. Computational cost가 높다.
   2. 고정된 그래프에만 적용된다. Social Network Graph의 경우 시간의 경과에 따라 변형된다.
   3. Undirected 그래프에만 적용된다.
+
 
 # Wrap-up
 
