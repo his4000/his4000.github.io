@@ -190,6 +190,10 @@ img {
   margin: 2em 0;
   float: right;
   width: 15%;
+  
+  @include mobile {
+    display: none;
+  }
 }
 
 .tag-list .tag-title {
