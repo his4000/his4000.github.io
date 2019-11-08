@@ -46,6 +46,10 @@ body {
 .body-container {
   float: left;
   width: 80%;
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .entry {
