@@ -47,11 +47,9 @@
       {% else %}
       <aside class="tag-list">
         <section>
-          <strong class="tag-title">Tags Test</strong>
+          <strong class="tag-title">Tags</strong>
             <ul>
-              {% for tag in site.tags %}
                 <li><a href="{{ site.baseurl }}/tags/{{ tag | first }}">{{ tag | first }} ( {{ tag | last | size }} )</a></li>
-              {% endfor %}
             </ul>
         </section>
       </aside>
